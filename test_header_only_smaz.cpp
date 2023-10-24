@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "smaz.h"
+#include "smaz_header_only.hpp"
 
 int main(void) {
     char in[512];

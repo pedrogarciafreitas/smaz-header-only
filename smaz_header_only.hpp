@@ -1,4 +1,10 @@
+#ifndef SMAZ_HEADER_ONLY_HPP
+#define SMAZ_HEADER_ONLY_HPP
+
 #include <string.h>
+
+#pragma once
+
 
 /* Our compression codebook, used for compression */
 static char *Smaz_cb[241] = {
@@ -192,3 +198,5 @@ int smaz_decompress(char *in, int inlen, char *out, int outlen) {
     }
     return out-_out;
 }
+
+#endif
